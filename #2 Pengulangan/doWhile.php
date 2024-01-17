@@ -1,8 +1,7 @@
 <?php
-// belajar pengulangan dengan Do While di php
+// belajar pengulangan Do While di PHP
 $i = 0;
-do{
-    echo "Hasil ditampilkan oleh Do While php <br>";
+do {
+    echo "Hasil di tampilkan oleh Do While PHP <br>";
     $i++;
-}while($i < 5)
-?>
+} while ($i < 5);
