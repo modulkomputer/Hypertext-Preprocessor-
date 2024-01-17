@@ -1,14 +1,9 @@
 <?php
-// belajar fungsi (Function) di php
+// belajar function di PHP
 function perkenalan($nama, $salam)
 {
-  echo $salam . ",";
-  echo "perkenalkan, nama saya " . $nama . "<br>";
-  echo "senang berkenalan dengan anda <br>";
+  echo $salam;
+  echo " perkenalkan nama saya " . $nama  . "<br>";
+  echo "senang berkenalan dengan anda";
 }
 perkenalan("muhaemin", "hai");
-echo "<hr>";
-
-$saya = "muhaemin";
-$ucapan = "assalamuallaikum";
-perkenalan($saya, $ucapan);
