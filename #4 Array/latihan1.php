@@ -17,11 +17,11 @@ $mahasiswa = [
 <body>
   <?php foreach ($mahasiswa as $mhs) : ?>
     <ul>
-      <li>ID <?php echo $mhs[0]; ?></li>
-      <li>Nama <?php echo $mhs[1]; ?></li>
-      <li>Email <?php echo $mhs[2]; ?></li>
-      <li>Jurusan <?php echo $mhs[3]; ?></li>
-      <li>Jenis Kelamin <?php echo $mhs[4]; ?></li>
+      <li><b>ID</b> <?php echo $mhs[0]; ?></li>
+      <li><b>Nama</b> <?php echo $mhs[1]; ?></li>
+      <li><b>Email</b> <?php echo $mhs[2]; ?></li>
+      <li><b>Jurusan</b> <?php echo $mhs[3]; ?></li>
+      <li><b>Jenis Kelamin</b> <?php echo $mhs[4]; ?></li>
     </ul>
   <?php endforeach; ?>
 </body>
