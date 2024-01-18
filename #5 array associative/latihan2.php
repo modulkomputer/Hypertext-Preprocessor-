@@ -5,8 +5,15 @@ $daftarYoutbeBelajar = [
     "author"    => "Sandika Galih",
     "channel"   => "Web Programming UNPAS",
     "link"      => "https://www.youtube.com/@sandhikagalihWPU",
-    "category"  => ["HTML", "CSS", "Javascript", "PHP", "Laravel", "Codingiter"],
+    "category"  => "Web Developer",
     "photo"     => "sandika.jpg"
+  ],
+  [
+    "author"    => "Faqihza Muhklis",
+    "channel"   => "Kelas Terbuka",
+    "link"      => "https://www.youtube.com/@KelasTerbuka",
+    "category"  => "Struktur Pemrograman",
+    "photo"     => "faqihza.jpg"
   ]
 ];
 
