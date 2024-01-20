@@ -1,0 +1,29 @@
+.container {
+  position: relative;
+  width: 700px;
+  margin: 50px auto;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.tbbooks {
+  width: 100%;
+}
+
+.tbbooks #td-img {
+  text-align: center;
+}
+
+img {
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+}
+.btn-add {
+  margin-bottom: 10px;
+  text-decoration: none;
+}
+.site-search {
+  position: absolute;
+  left: 90px;
+  top: 0;
+}

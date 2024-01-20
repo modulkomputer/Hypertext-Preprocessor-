@@ -9,32 +9,16 @@ $book = query("SELECT * FROM books");
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Halaman admin</title>
-  <style>
-    .container {
-      width: 700px;
-      margin: 50px auto;
-      font-family: Arial, Helvetica, sans-serif;
-    }
-
-
-    .tbbooks {
-      width: 100%;
-    }
-
-    .tbbooks #td-img {
-      text-align: center;
-    }
-
-    img {
-      width: 20px;
-      height: 20px;
-      border-radius: 50%;
-    }
-  </style>
+  <link rel="stylesheet" href="assets/style.css">
 </head>
 
 <body>
   <div class="container">
+    <a href="add.php"><button class="btn-add">Add Book</button></a>
+    <form class="site-search" action="" method="post">
+      <input type="search" id="site-search" name="site-search">
+      <button>Search</button>
+    </form>
     <table class="tbbooks" border="1" cellspacing='0' cellpadding='5'>
       <tr>
         <th>#</th>
