@@ -16,10 +16,10 @@ $book = query("SELECT * FROM books");
 
 <body>
   <div class="container">
-    <a href="add.php"><button class="btn-add">Add Book</button></a>
+    <a href="layout/add.php"><button class="btn-add">Add Book <i class="fa-solid fa-plus"></i></button></a>
     <form class="site-search" action="" method="post">
       <input type="search" id="site-search" name="site-search">
-      <button>Search</button>
+      <button><i class="fa-solid fa-magnifying-glass"></i></button>
     </form>
     <table class="tbbooks" border="1" cellspacing='0' cellpadding='5'>
       <tr>
@@ -44,14 +44,15 @@ $book = query("SELECT * FROM books");
             <img src="assets/img/<?php echo $row["cover"]; ?>" alt="">
           </td>
           <td>
-            <a href="#">Edit</a> |
-            <a href="#">Delete</a>
+            <a class="edit" href="#">Edit</a> |
+            <a class="delete" href="#">Delete</a>
           </td>
         </tr>
         <?php $i++; ?>
       <?php endforeach; ?>
     </table>
   </div>
+  <script src="https://kit.fontawesome.com/3cd7c43e85.js" crossorigin="anonymous"></script>
 </body>
 
 </html>

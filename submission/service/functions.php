@@ -14,3 +14,19 @@ function query($query)
   }
   return $rows;
 }
+
+function add($data)
+{
+  global $database;
+  // ambil data dari tiap elemen dalam form
+  $title = htmlspecialchars($data["title"]);
+  $author = htmlspecialchars($data["author"]);
+  $publisher_year = htmlspecialchars($data["publisher_year"]);
+  $price = htmlspecialchars($data["price"]);
+  $cover = htmlspecialchars($data["cover"]);
+
+  // query insert data
+  $query = "INSERT INTO books(title, author, publisher_year, price, cover) VALUES ('$title','$author','$publisher_year','$price','$cover')";
+  mysqli_query($database, $query);
+  return mysqli_affected_rows($database);
+}

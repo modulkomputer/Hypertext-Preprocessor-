@@ -1,3 +1,26 @@
+<?php
+include "service/functions.php";
+// cek apakah tombol btn-add sudah diklik apa belum?
+if (isset($_POST["btn-add"])) {
+  if (add($_POST) > 0) {
+    echo
+    "
+    <script>
+    alert('data berhasil ditambahkan';
+    document.location.href = 'index.php';
+    </script>
+    ";
+  } else {
+    echo
+    "
+    <script>
+    alert('data gagal ditambahkan';
+    document.location.href = 'index.php';
+    </script>
+    ";
+  }
+}
+?>
 <!DOCTYPE html>
 <html lang="en">
 
@@ -32,7 +55,7 @@
       </tr>
       <tr>
         <td></td>
-        <td><button type="submit" name="submit">Kirim</button></td>
+        <td><button type="submit" name="btn-add">Kirim</button></td>
       </tr>
     </table>
   </form>
