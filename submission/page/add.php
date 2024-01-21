@@ -30,6 +30,10 @@
         <td><label for="cover">Cover</label></td>
         <td><input type="file" name="cover" id="cover"></td>
       </tr>
+      <tr>
+        <td></td>
+        <td><button type="submit" name="submit">Kirim</button></td>
+      </tr>
     </table>
   </form>
 </body>

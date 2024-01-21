@@ -11,3 +11,20 @@ function query($query)
   }
   return $rows;
 }
+
+// fungsi add
+function add($data)
+{
+  global $connect;
+  $title = htmlspecialchars($data["title"]);
+  $author = htmlspecialchars($data["author"]);
+  $publisher_year = htmlspecialchars($data["publisher_year"]);
+  $price = htmlspecialchars($data["price"]);
+  $cover = htmlspecialchars($data["cover"]);
+
+
+  // query insert data
+  $query = "INSERT INTO books VALUES ('','$title', '$author','$publisher_year','$price','$cover')";
+  mysqli_query($connect, $query);
+  return mysqli_affected_rows($connect);
+}
