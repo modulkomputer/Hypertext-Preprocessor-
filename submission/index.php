@@ -49,6 +49,7 @@ $book = query("SELECT * FROM books");
           </td>
         </tr>
         <?php $i++; ?>
+
       <?php endforeach; ?>
     </table>
   </div>

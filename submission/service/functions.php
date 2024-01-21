@@ -1,6 +1,7 @@
 <?php
 $database = mysqli_connect("localhost", "root", "", "library");
 
+
 function query($query)
 {
   global $database;
