@@ -1,6 +1,8 @@
 <?php
 require "service/functions.php";
+// varibale book di isi dengan kotak tadi
 $book = query("SELECT * FROM books");
+
 ?>
 <!DOCTYPE html>
 <html lang="en">
@@ -39,7 +41,7 @@ $book = query("SELECT * FROM books");
           <td><?php echo $row["publisher_year"]; ?></td>
           <td><?php echo $row["price"]; ?></td>
           <td id="td-img">
-            <img src="assets/img/<?php echo $row[" cover"]; ?>" alt="">
+            <img src="assets/img/<?php echo $row["cover"]; ?>" alt="">
           </td>
           <td>
             <a href="#">Edit</a> |

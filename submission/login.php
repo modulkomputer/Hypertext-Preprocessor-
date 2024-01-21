@@ -4,7 +4,7 @@ if (isset($_POST["submit"])) {
   // cek name dan password
   if ($_POST["name"] == "admin" && $_POST["password"] == "123") {
     // jika bener, ridirect kehalaman home
-    header("Location: home.php");
+    header("Location: index.php");
     exit();
   } else {
     // kalau salah, tampilkan kesalahan
