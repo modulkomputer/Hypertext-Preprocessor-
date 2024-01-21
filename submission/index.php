@@ -1,5 +1,5 @@
 <?php
-require "inc/functions.php";
+require "service/functions.php";
 $book = query("SELECT * FROM books");
 ?>
 <!DOCTYPE html>
@@ -39,7 +39,7 @@ $book = query("SELECT * FROM books");
           <td><?php echo $row["publisher_year"]; ?></td>
           <td><?php echo $row["price"]; ?></td>
           <td id="td-img">
-            <img src="img/<?php echo $row["cover"]; ?>" alt="">
+            <img src="assets/img/<?php echo $row[" cover"]; ?>" alt="">
           </td>
           <td>
             <a href="#">Edit</a> |
