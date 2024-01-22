@@ -2,22 +2,22 @@
 require "../service/functions.php";
 
 // cek apakah tombol btn-add sudah diklik apa belum?
-if (isset($_POST["submit"])) {
+if (isset($_POST["btn-add"])) {
   // cek apakah data berhasil ditambahkan atua tidak
   if (add($_POST) > 0) {
     echo
     "
     <script>
-    alert('data berhasil ditambahkan';
-    document.location.href = 'index.php';
+    alert('data berhasil ditambahkan');
+    document.location.href = '../index.php';
     </script>
     ";
   } else {
     echo
     "
     <script>
-    alert('data gagal ditambahkan';
-    document.location.href = 'index.php';
+    alert('data gagal ditambahkan');
+    document.location.href = '../index.php';
     </script>
     ";
   }
@@ -42,7 +42,7 @@ if (isset($_POST["submit"])) {
         </tr>
         <tr>
           <td><label for="author">Author</label></td>
-          <td><input type="text" name="title" id="author"></td>
+          <td><input type="text" name="author" id="author"></td>
         </tr>
         <tr>
           <td><label for="publisher_year">Publisher Year</label></td>
@@ -58,7 +58,7 @@ if (isset($_POST["submit"])) {
         </tr>
         <tr>
           <td></td>
-          <td><button type="submit" name="sumbit">Kirim</button></td>
+          <td><button type="submit" name="btn-add">Kirim</button></td>
         </tr>
       </table>
     </form>

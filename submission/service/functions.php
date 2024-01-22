@@ -20,11 +20,11 @@ function add($data)
 {
   global $database;
   // ambil data dari tiap elemen dalam form
-  $title = htmlspecialchars($data["title"]);
-  $author = htmlspecialchars($data["author"]);
-  $publisher_year = htmlspecialchars($data["publisher_year"]);
-  $price = htmlspecialchars($data["price"]);
-  $cover = htmlspecialchars($data["cover"]);
+  $title = ($data["title"]);
+  $author = ($data["author"]);
+  $publisher_year = ($data["publisher_year"]);
+  $price = ($data["price"]);
+  $cover = ($data["cover"]);
 
   // query insert data
   $query = "INSERT INTO books(title, author, publisher_year, price, cover) VALUES ('$title','$author','$publisher_year','$price','$cover')";

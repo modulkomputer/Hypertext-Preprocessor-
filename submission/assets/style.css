@@ -1,4 +1,4 @@
-/* .container {
+.container {
   position: relative;
   width: 700px;
   margin: 50px auto;
@@ -19,9 +19,24 @@ img {
 }
 .btn-add {
   margin-bottom: 10px;
+  background-color: rgb(66, 66, 216);
+  color: white;
+  border: none;
+  display: inline-block;
+  height: 21px;
+  cursor: pointer;
+  border-radius: 2px;
 }
 .container .site-search {
   position: absolute;
   left: 90px;
   top: 0;
-} */
+}
+.edit {
+  color: green;
+  text-decoration: none;
+}
+.delete {
+  color: orange;
+  text-decoration: none;
+}
