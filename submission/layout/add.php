@@ -1,8 +1,8 @@
 <?php
-require "service/functions.php";
+require "../service/functions.php";
 
 // cek apakah tombol btn-add sudah diklik apa belum?
-if (isset($_POST["btn-add"])) {
+if (isset($_POST["submit"])) {
   // cek apakah data berhasil ditambahkan atua tidak
   if (add($_POST) > 0) {
     echo
@@ -58,7 +58,7 @@ if (isset($_POST["btn-add"])) {
         </tr>
         <tr>
           <td></td>
-          <td><button type="submit" name="btn-add">Kirim</button></td>
+          <td><button type="submit" name="sumbit">Kirim</button></td>
         </tr>
       </table>
     </form>
