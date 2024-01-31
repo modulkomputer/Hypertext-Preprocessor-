@@ -45,11 +45,10 @@ $book = query("SELECT * FROM books");
           </td>
           <td>
             <a class="edit" href="#">Edit</a> |
-            <a class="delete" href="#">Delete</a>
+            <a class="delete" href="layout/delete.php?id=<?php echo $row["id"]; ?>" onclick="return confirm('Yakin!')">Delete</a>
           </td>
         </tr>
         <?php $i++; ?>
-
       <?php endforeach; ?>
     </table>
   </div>

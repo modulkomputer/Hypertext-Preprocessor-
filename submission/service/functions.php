@@ -20,14 +20,20 @@ function add($data)
 {
   global $database;
   // ambil data dari tiap elemen dalam form
-  $title = ($data["title"]);
-  $author = ($data["author"]);
-  $publisher_year = ($data["publisher_year"]);
-  $price = ($data["price"]);
-  $cover = ($data["cover"]);
+  $title = htmlspecialchars($data["title"]);
+  $author = htmlspecialchars($data["author"]);
+  $publisher_year = htmlspecialchars($data["publisher_year"]);
+  $price = htmlspecialchars($data["price"]);
+  $cover = htmlspecialchars($data["cover"]);
 
   // query insert data
   $query = "INSERT INTO books(title, author, publisher_year, price, cover) VALUES ('$title','$author','$publisher_year','$price','$cover')";
   mysqli_query($database, $query);
+  return mysqli_affected_rows($database);
+}
+function delete($id)
+{
+  global $database;
+  mysqli_query($database, "DELETE FROM books WHERE id = $id");
   return mysqli_affected_rows($database);
 }

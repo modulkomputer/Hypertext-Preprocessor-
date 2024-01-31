@@ -38,11 +38,11 @@ if (isset($_POST["btn-add"])) {
       <table>
         <tr>
           <td><label for="title">Title</label></td>
-          <td><input type="text" name="title" id="title"></td>
+          <td><input type="text" name="title" id="title" required></td>
         </tr>
         <tr>
           <td><label for="author">Author</label></td>
-          <td><input type="text" name="author" id="author"></td>
+          <td><input type="text" name="author" id="author" required></td>
         </tr>
         <tr>
           <td><label for="publisher_year">Publisher Year</label></td>
